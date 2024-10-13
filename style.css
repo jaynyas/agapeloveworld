@@ -1,0 +1,522 @@
+/* seleted tag{
+    property :value
+} */
+ /* 
+ /* styles.css */
+
+/* General Navbar Styling */
+.navbar {
+   background-color: rgb(97, 1, 84); /* Background color of the navbar */
+   padding: 10px; /* Padding around the navbar */
+}
+
+/* Container Fluid */
+.container-fluid {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+/* Top Logo Section */
+.top-logo {
+   display: flex;
+   align-items: center;
+   color: #ffffff; /* Text color */
+}
+
+.top-logo .logo {
+   height: 50px; /* Adjust logo height */
+   margin-right: 15px; /* Space between logo and text */
+}
+
+.top-logo h1 {
+   margin: 0;
+   font-size: 1.5rem; /* Font size for the heading */
+   color: #ffffff; /* White text color */
+}
+
+/* Navbar Toggler (Hamburger Icon) */
+.navbar-toggler {
+   border: none; /* Remove default border */
+   background: transparent; /* Transparent background */
+}
+
+.navbar-toggler-icon {
+   background-image: url('data:image/svg+xml;base64,...'); /* Custom icon or SVG base64 */
+}
+
+/* Navbar Links Styling */
+.nav-link {
+   color: #ffffff; /* White text color for links */
+   margin: 0 10px; /* Margin between links */
+   text-decoration: none; /* Remove underline */
+}
+
+.nav-link:hover {
+   text-decoration: underline; /* Underline on hover */
+   color: orangered;
+}
+
+/* Dropdown Menu Styling */
+ .dropdown-menu {
+   background-color:rgb(97, 1, 84); /* Same background color as navbar */
+   border: none; /* Remove default border */
+}
+.navbar-nav{
+   background-color:rgb(97, 1, 84);
+}
+
+.dropdown-item {
+   color: #ffffff; /* White text color for dropdown items */
+}
+
+.dropdown-item:hover {
+   background-color: #eee7ea; /* Darker color on hover */
+   color: orangered;
+}
+
+/* Social Media Links */
+.social-nav {
+   display: flex;
+   align-items: center;
+}
+
+.social {
+   display: flex;
+   gap: 10px; /* Space between social media icons */
+   margin-right: 20px; /* Space to the right of the social icons */
+}
+
+.socialMediaLinks img {
+   border-radius: 50%; /* Circular icons */
+   transition: transform 0.3s ease; /* Smooth scaling effect */
+   width: 30px;
+}
+
+.socialMediaLinks img:hover {
+   transform: scale(1.1); /* Slightly enlarge icons on hover */
+   color: orangered;
+}
+
+/* Reach Section */
+.reach {
+   color: #ffffff; /* White text color */
+   margin-bottom: 10px; /* Space below each reach item */
+}
+
+.reach a {
+   color: #ffffff; /* White text color for links */
+   text-decoration: none; /* Remove underline */
+}
+
+.reach a:hover {
+   text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+   .navbar-nav {
+       text-align: center;
+   }
+
+   .social-nav {
+       flex-direction: column;
+   }
+}
+
+ 
+ .top-logo img{
+    width: 100px;
+
+ }
+ .lazy img{
+    width: 95px;
+
+ }
+ .lazy img:hover{
+   color: orangered;
+ }
+ .top-logo img,h1{
+    display: inline;
+    font-size: large;
+    
+ }
+ .social-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+ .social-nav a{
+    color: rgb(21, 21, 21);
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+ .social-nav a:hover{
+   color: orangered;
+ }
+
+ .container-fluid{
+   background-color:rgb(97, 1, 84);
+   background-size: cover;
+   padding-top: 30px;
+   min-height: 70px;
+   color: whitesmoke;
+   border-bottom:  orangered 2px solid;
+    border-top: orangered 2px solid;
+    text-transform: capitalize;
+    align-items: center; /* Center items vertically within the ul */
+    justify-content: center; /* Center items horizontally */
+    
+
+ }
+
+ .nav-link{
+   color: whitesmoke;
+   text-transform: uppercase;
+   align-items: center; /* Center items vertically within the ul */
+   justify-content: center; /* Center items horizontally */
+   
+   
+}
+.social a{
+   float: left;
+   align-items: center; /* Center items vertically within the ul */
+    justify-content: center; /* Center items horizontally */
+}
+.nav-link:hover{
+   color: orangered;
+   text-decoration: underline;
+   
+  }
+  .navbar-toggler{
+      border: none; /* Remove default border */
+         background-image: url('./images/toggler_icon-removebg-preview.png'); /* Transparent background */
+         display: flex;
+         flex-direction: column;
+         background-color: #ffffff;
+  }
+  
+  .navbar-toggler-icon {
+      width: 30px; /* Adjust width of the icon */
+      height: 30px; /* Adjust height of the icon */
+      background-image: url('./images/toggler_icon-removebg-preview.png'); /* White color for the icon */
+      display: inline-block;
+      border-radius: 5px; /* Rounded corners */
+      position: relative;
+      transition: background-color 0.3s ease; /* Smooth background color transition */
+      display: flex;
+      flex-direction: row;
+      background-color: #ffffff;
+  }
+  
+
+.navbar-toggler-icon{
+   
+   border:orangered
+}
+
+.navbar-toggler-icon:hover{
+   color: orangered;
+   text-decoration: underline;
+}
+
+/* footer */
+#main-footer {
+   background-color: #343a40; /* Dark background */
+   color: #ffffff; /* White text color */
+   padding: 15px; /* Padding around the footer */
+   font-family: Arial, sans-serif; /* Font for the footer */
+   margin-top: auto;
+}
+
+.footer {
+   display: flex;
+   flex-wrap: wrap; /* Wrap items on smaller screens */
+   justify-content: space-between; /* Space out the sections */
+}
+
+.contact-us, .location, .social {
+   flex: 1;
+   margin: 10px; /* Margin around each section */
+}
+
+.contact-us h1, .location h1, .social h1 {
+   font-size: 1.5em;
+   margin-bottom: 15px; /* Space below the headings */
+}
+
+.mb-3 {
+   margin-bottom: 15px; /* Bottom margin for spacing */
+}
+
+a {
+   color: #ffffff; /* White color for links */
+   text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+   text-decoration: underline; /* Underline on hover */
+   color: orangered;
+}
+
+.social-icons {
+   display: flex;
+   gap: 10px; /* Space between social media icons */
+}
+
+.socialMediaLinks img {
+   border-radius: 50%; /* Circular icons */
+   transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.socialMediaLinks img:hover {
+   transform: scale(1.1); /* Slightly enlarge icons on hover */
+   color: orangered;
+}
+
+hr {
+   border: 0;
+   border-top: 1px solid #ffffff; /* White line */
+   margin: 20px 0; /* Margin for spacing */
+}
+
+p {
+   text-align: center; /* Center align the copyright text */
+   font-size: 0.9em; /* Smaller font size */
+}
+
+/* BOXES */
+#box{
+   margin-top: 10px;
+  }
+  #box .box {
+ text-align:center
+
+  }
+  
+   #box .box img{
+      width: 100px;
+   }
+   
+   /* SIDEBAR */
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+   width: 90%;
+   padding: 5px;
+}
+aside#sidebar{
+   float: right;
+   width: 20%;
+
+
+}
+
+/* Main-col */
+
+/* article#main-col{
+   
+   width: 65%;
+   list-style: none;
+} 
+/* Main container */
+.container {
+   max-width: fit-content;
+   margin: 0 auto;
+   padding: 5px;
+   overflow: auto;
+}
+
+/* Newsletter section */
+
+ #newsletter h1{
+   text-align: left;
+   font-size: 18px;
+   float: left;
+   padding-right: 250px;
+   padding-left: 70px;
+   
+ }
+ #newsletter input{
+
+ }
+
+#newsletter button {
+
+   background-color: orangered;
+   color: white;
+   border: none;
+   border-radius: cover;
+   font-size: 16px;
+   cursor: pointer;
+   
+}
+
+#newsletter button:hover {
+   background-color: #218838;
+}
+
+/* Main section layout */
+#main .container {
+   display: flex;
+   gap: 5px;
+}
+
+/* Main column (left side) */
+#main-col {
+   flex: 0 0 65%;
+}
+
+
+/* Dark section for emphasis */
+
+
+.dark h3 {
+   
+   margin-bottom: 2px;
+}
+
+/* Sidebar (right side) */
+#sidebar {
+   flex: 0 0 35%;
+}
+
+/* General typography */
+h1, h3 {
+   font-family: 'Arial', sans-serif;
+   margin-bottom: 2%;
+}
+
+p {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 16px;
+   
+}
+
+
+ul#services li{
+   list-style: none;
+   
+   border: #cccccc solid 1px;
+   margin-bottom: 5px;
+
+}
+.button_1{
+   border: 0px;
+   
+   background-color: orangered;
+    color: whitesmoke;
+   /* border-bottom: orangered 2px solid; */ 
+}
+.button_1{
+   height: 30px;
+   border: 0px;
+   background-color: orangered;
+    color: whitesmoke;
+   /* border-bottom: orangered 2px solid; */ 
+}
+    button a{
+   text-align: center;
+ }
+
+
+#newsletter{
+   
+   color: whitesmoke;
+   background:rgb(33, 0, 63); ;
+   border-bottom:  orangered 2px solid;
+   border-top: orangered 2px solid;
+}
+
+.contact{
+   text-align: center;
+}
+
+
+.dark{
+   background: rgb(53, 53, 52);
+   padding: 15px;
+   color: whitesmoke;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border-bottom: orangered 2px solid;
+   border-top:  orangered 2px solid;
+   list-style: none;
+   
+   
+}
+    .rhema{
+      text-transform: capitalize;
+      text-align: center;
+      color: rgb(132, 79, 132);
+      font-size: larger;
+      
+   }
+   #branding{
+      margin-top: 0%;
+   text-align: center;
+      margin-left: 50px;
+      color: rgb(129, 4, 126);
+      
+  }
+   .paragraph{
+      text-align: justify;
+      padding: 10px;
+      width: auto;
+   }
+button a{
+   text-align: center;
+}
+      
+
+/* COLLAPSE */
+.card-header {
+   background-color: #f8f9fa;
+   border-bottom: 1px solid #dee2e6;
+}
+
+.card-header h2 {
+   font-size: 1.25rem;
+}
+
+.btn-link {
+   text-decoration: none;
+   font-weight: bold;
+   color: #007bff;
+}
+
+.btn-link:hover {
+   text-decoration: underline;
+   color: #0056b3;
+}
+
+.card-body {
+   background-color: #ffffff;
+   padding: 15px;
+   font-size: 1rem;
+   line-height: 1.6;
+}
+ td li{
+   list-style-type: none;
+   
+ }
+  .note{
+   text-align: center;
+  }
+  .note b{
+   color: red;
+
+  }
+  #collapse a{
+   text-align: center;
+  }
